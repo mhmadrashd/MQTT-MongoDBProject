@@ -29,10 +29,10 @@ def connect_mqtt() -> mqtt_client:
 
 def subscribe(client: mqtt_client):
     def on_message(client, userdata, msg):
-        instObj = json.loads(msg.payload.decode())
-        print(instObj)
+        stdObj = json.loads(msg.payload.decode())
+        print(stdObj)
         student.insertstudent(
-            instObj["name"], instObj["age"], instObj["track"], instObj["courses"])
+            stdObj["name"], stdObj["age"], stdObj["track"], stdObj["courses"])
 
     client.subscribe(topic)
     client.on_message = on_message

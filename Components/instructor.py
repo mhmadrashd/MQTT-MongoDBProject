@@ -41,3 +41,8 @@ def insertInstructor(name: str, age: int, track: str, supervisor: bool):
     instructosArr.append(instructorObj)
     incInstructorID()
     print("Instructor Data inserted successfully")
+
+
+def deleteAllInstructors():
+    instructorColl.delete_many({})
+    print("All Instructors Data Deleted successfully")

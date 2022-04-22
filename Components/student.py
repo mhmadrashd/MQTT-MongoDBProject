@@ -40,3 +40,8 @@ def insertstudent(name: str, age: int, track: str, courses: list):
     studentsArr.append(studentObj)
     incStuentID()
     print("student Data inserted successfully")
+
+
+def deleteAllStudents():
+    studentColl.delete_many({})
+    print("All Students Data Deleted successfully")

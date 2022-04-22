@@ -1,5 +1,4 @@
 import pymongo
-client = pymongo.MongoClient(
-    "mongodb+srv://iot:1234560@mongodbproject.spgbw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient()  # Write your Atlas Credentials
 
 dbITI = client["ITI"]

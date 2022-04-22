@@ -1,6 +1,6 @@
-# MongoDBProject
+# MQTT-MongoDB
 
-## MongoDB Project Course in ITI
+## MQTT-MongoDB Atlas Project Course in ITI
 
 Using Python send data from MQTT to MongoDB Atlas
 
@@ -8,4 +8,4 @@ Using **paho-mqtt** client to connect, subscribe and messaging between the **MQT
 
 ## To See The Project in Youtube
 
-https://youtu.be/eZckQhXJmq8
+https://youtu.be/dIfKkGxTkI8
